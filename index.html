@@ -1,0 +1,200 @@
+
+<html>
+  <head>
+<link rel="stylesheet" href="styles.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad:wght@500;600&family=Anonymous+Pro&family=Kdam+Thmor+Pro&family=Orbitron&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title" class="text-center">User Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve the platform
+        </p>
+
+        <form id="survey-form">
+          <fieldset>
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+          
+          <label id="age-label" for="age"
+            >Age</label
+          >
+          <input
+            type="number"
+            name="age"
+            id="age"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+
+          <label id="number-label" for="number"
+            >Contact Number</label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="5"
+            max="10"
+            class="form-control"
+            placeholder="Enter Contact No"
+          />
+
+          <label id="location-label" for="number"
+            >Location </label
+          >
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select Location</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option>
+            <option value="Ichalkaranji">Ichalkaranji</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+        <label>Who are you? </label>
+        <label for="personal-account">
+          <input id="personal-account" 
+          type="radio" 
+          name="g1" 
+          class="inline" 
+          value="11"
+          checked /> 
+          Student
+          </label>
+        <label for="business-account"><input id="business-account" type="radio" name="g1" class="inline" value="11" /> Industry Professional</label>
+      </fieldset>
+
+        <fieldset>
+          <p>
+            What is field of work?
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="Front-end Dvelopment"
+              type="checkbox"
+              class="inline"
+            />Front-end Dvelopment</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="Back-end Development"
+              type="checkbox"
+              class="inline"
+            />Back-end Development</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Blockchain Technology"
+              type="checkbox"
+              class="inline"
+            />Blockchain Technology</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Data Science"
+              type="checkbox"
+              class="inline"
+            />Data Science</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Artificial Intelligence"
+              type="checkbox"
+              class="inline"
+            />Artificial Intelligence</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Machine Learning"
+              type="checkbox"
+              class="inline"
+            />Machine Learning</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="UI / UX"
+              type="checkbox"
+              class="inline"
+            />UI / UX</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Software developer"
+              type="checkbox"
+              class="inline"
+            />Software developer</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="java Developer"
+              type="checkbox"
+              class="inline"
+            />java Developer</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="JavaScript Developer"
+              type="checkbox"
+              class="inline"
+            />JavaScript Developer</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Full stack Development"
+              type="checkbox"
+              class="inline"
+            />Full stack Development</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <p>Any suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </fieldset>
+
+        <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+
+
+      </form>
+  </body>
+</html>
